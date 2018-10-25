@@ -30,7 +30,7 @@ public class Line {
     }
 
 
-    public static boolean pointOnLine(Point p)
+    public boolean pointOnLine(Point p)
     {
         if((p.returnX()) == (beginnig.returnX()) && (p.returnY()) == (beginnig.returnY())){
             return true;
@@ -46,7 +46,7 @@ public class Line {
         else return false;
     }
 
-    public static void lenghtLine(){
+    public void lenghtLine(){
         double lenL;
         lenL = Math.pow((ending.returnY() - beginnig.returnY()), 2) + Math.pow((ending.returnX() - beginnig.returnX()), 2);
         Math.sqrt(lenL);
